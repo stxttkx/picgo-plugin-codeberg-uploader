@@ -1,0 +1,8 @@
+src
+test
+coverage
+*.log
+.DS_Store
+.github
+tsconfig.json
+tslint.json
