@@ -2,6 +2,8 @@
 
 [PicGo](https://github.com/Molunerfinn/PicGo) 桌面端的 [Codeberg](https://codeberg.org) 图床上传插件。
 
+[![npm version](https://img.shields.io/npm/v/picgo-plugin-codeberg-uploader.svg)](https://www.npmjs.com/package/picgo-plugin-codeberg-uploader)
+
 基于 [picgo-plugin-gitee-uploader](https://github.com/lizhuangs/picgo-plugin-gitee-uploader) 架构移植，适配 Codeberg 的 Forgejo API。
 
 ## 功能
@@ -20,18 +22,28 @@
 
 ## 安装
 
-### 方式一：解压即用（推荐，免联网）
+### 方式一：PicGo 内安装（推荐）
 
-下载 `picgo-plugin-codeberg-uploader-v1.0.0.zip`，解压后把 `picgo-plugin-codeberg-uploader` 整个目录（目录名不能改）放进 PicGo 的数据目录：
+插件已发布到 npm，在 PicGo「设置 → 插件设置」搜索 `picgo-plugin-codeberg-uploader` 安装即可。
+
+也可手动安装：
+
+```bash
+# Windows
+cd %APPDATA%\picgo && npm install picgo-plugin-codeberg-uploader
+
+# macOS / Linux
+cd ~/.config/picgo && npm install picgo-plugin-codeberg-uploader
+```
+
+### 方式二：解压即用（免联网）
+
+下载 [GitHub Releases](https://github.com/stxttkx/picgo-plugin-codeberg-uploader/releases) 中的 `picgo-plugin-codeberg-uploader-v1.0.0.zip`，解压后把 `picgo-plugin-codeberg-uploader` 整个目录（目录名不能改）放进 PicGo 的数据目录：
 
 - Windows：`%APPDATA%\picgo\node_modules\`
 - macOS / Linux：`~/.config/picgo/node_modules/`
 
 重启 PicGo，在「图床设置」里就会出现 **Codeberg**。
-
-### 方式二：PicGo 内安装
-
-插件未发布到 npm 时请用方式一。发布后可在 PicGo「设置 → 插件设置」搜索安装。
 
 ## 配置说明
 
